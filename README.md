@@ -1,7 +1,7 @@
 # jupyterLab
 This repo contains practical applications of threat hunting techniques. <br>
 <br>
-Below is the link to launch the JupyterLab in MyBinder, a custom computing environment that allows you to share workflows with others.
+Below is the link to launch the JupyterLab in MyBinder, a custom computing environment that allows you to share workflows with others.<br>
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/beerMT/jupyterLab/master)
 
 
