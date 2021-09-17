@@ -454,7 +454,7 @@
                 {
                   "status": "Mitigated",
                   "severity": "Low",
-                  "title": "Unencypted Data Transfer",
+                  "title": "Unencrypted Data Transfer",
                   "type": "Information disclosure",
                   "description": "Data transferred in clear text could lead to sensitive information being disclosed.",
                   "mitigation": "Network traffic is encapsulated with HTTPS."
@@ -509,7 +509,7 @@
                 {
                   "status": "Mitigated",
                   "severity": "Low",
-                  "title": "Unencypted Data Transfer",
+                  "title": "Unencrypted Data Transfer",
                   "type": "Information disclosure",
                   "description": "Data transferred in clear text could lead to sensitive information being disclosed.",
                   "mitigation": "Network traffic is encapsulated with HTTPS."
@@ -815,12 +815,14 @@
               ],
               "z": 14,
               "hasOpenThreats": false,
+              "outOfScope": true,
+              "reasonOutOfScope": "3rd party SaaS",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isOutOfScope"
                 }
               }
             },
@@ -914,6 +916,16 @@
               ],
               "z": 18,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "title": "Unencrypted Data Transfer",
+                  "type": "Information disclosure",
+                  "description": "Data transferred in clear text could lead to sensitive information being disclosed.",
+                  "mitigation": "Network traffic is encapsulated with HTTPS."
+                }
+              ],
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -956,6 +968,16 @@
               ],
               "z": 19,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "title": "Unencrypted Data Transfer",
+                  "type": "Information disclosure",
+                  "description": "Data transferred in clear text could lead to sensitive information being disclosed.",
+                  "mitigation": "Network traffic is encapsulated with HTTPS."
+                }
+              ],
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
