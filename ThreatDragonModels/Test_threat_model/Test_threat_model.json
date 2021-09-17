@@ -56,7 +56,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "M365 MFA\nLogin"
+                  "text": "Microsoft\nServices"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -178,6 +178,49 @@
                 }
               ],
               "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "0b2bce2a-3d56-4281-8b0d-f507e3bfda02"
+              },
+              "target": {
+                "x": 453,
+                "y": 83
+              },
+              "vertices": [
+                {
+                  "x": 514,
+                  "y": 46
+                }
+              ],
+              "id": "b8a151c3-c61c-475f-9ac6-80a5ad203873",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5608550157139806,
+                    "offset": 12.435122679266648
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "MFA Response",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 8,
               "hasOpenThreats": false,
               "attrs": {
                 ".marker-target": {
