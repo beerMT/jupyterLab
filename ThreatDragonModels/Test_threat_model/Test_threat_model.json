@@ -215,6 +215,7 @@
               "id": "2d42ad10-098d-49f7-8ebc-507c3a7b5b16",
               "z": 3,
               "hasOpenThreats": false,
+              "threats": [],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -240,16 +241,34 @@
               "angle": 0,
               "id": "786e5977-ecb2-4784-aa9e-b78287d40769",
               "z": 4,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Insufficient User Authentication / Access Controls",
+                  "type": "Tampering",
+                  "description": "Inadequate access controls allow for abuse by threat actors or allows for unapproved access for workforce that does not need it.",
+                  "mitigation": "IP allow list and fine tuned access controls help to mitigate the attack surface and only allows authorized users access to the asset."
+                },
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Insufficient User Authentication / Access Controls",
+                  "type": "Information disclosure",
+                  "description": "Inadequate access controls allow for abuse by threat actors or allows for unapproved access for workforce that does not need it.",
+                  "mitigation": "IP allow list and fine tuned access controls help to mitigate the attack surface and only allows authorized users access to the asset."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "SQL Databasee"
+                  "text": "SQL Database"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -278,11 +297,19 @@
               "target": {
                 "id": "786e5977-ecb2-4784-aa9e-b78287d40769"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 380,
+                  "y": 124
+                }
+              ],
               "id": "750d138c-089a-4882-bd5e-00c9dd2b76e2",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.5264106392860413,
+                    "offset": -11
+                  },
                   "attrs": {
                     "text": {
                       "text": "Database Request",
@@ -293,14 +320,24 @@
                 }
               ],
               "z": 6,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isPublicNetwork": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "title": "Unencrypted Data Transfer",
+                  "type": "Information disclosure",
+                  "description": "Data transferred in clear text could lead to sensitive information being disclosed.",
+                  "mitigation": "Network traffic is encapsulated with HTTPS."
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -315,16 +352,16 @@
               },
               "vertices": [
                 {
-                  "x": 393,
-                  "y": 174
+                  "x": 395,
+                  "y": 166
                 }
               ],
               "id": "8acac559-6d1a-475e-a5ae-92f151f356ca",
               "labels": [
                 {
                   "position": {
-                    "distance": 0.5137955395037906,
-                    "offset": 0
+                    "distance": 0.4928113072426612,
+                    "offset": -10.117329777008264
                   },
                   "attrs": {
                     "text": {
@@ -336,14 +373,24 @@
                 }
               ],
               "z": 7,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isPublicNetwork": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "title": "Unencrypted Data Transfer",
+                  "type": "Information disclosure",
+                  "description": "Data transferred in clear text could lead to sensitive information being disclosed.",
+                  "mitigation": "Network traffic is encapsulated with HTTPS."
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             }
