@@ -450,6 +450,16 @@
               "isEncrypted": true,
               "isPublicNetwork": true,
               "protocol": "HTTPS",
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "title": "Unencypted Data Transfer",
+                  "type": "Information disclosure",
+                  "description": "Data transferred in clear text could lead to sensitive information being disclosed.",
+                  "mitigation": "Network traffic is encapsulated with HTTPS."
+                }
+              ],
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -495,6 +505,16 @@
               "protocol": "HTTPS",
               "isEncrypted": true,
               "isPublicNetwork": true,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "title": "Unencypted Data Transfer",
+                  "type": "Information disclosure",
+                  "description": "Data transferred in clear text could lead to sensitive information being disclosed.",
+                  "mitigation": "Network traffic is encapsulated with HTTPS."
+                }
+              ],
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -572,6 +592,16 @@
               "id": "048016ce-36ad-47ea-897a-5f7325d8f3c5",
               "z": 7,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "title": "Compromised Credentials",
+                  "type": "Spoofing",
+                  "description": "Compromised credentials provide the threat actor with opportunity to spoof the user and assume their permission/access level.",
+                  "mitigation": "This attack is mitigated with the use of strongly enforced MFA."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -693,12 +723,14 @@
               ],
               "z": 12,
               "hasOpenThreats": false,
+              "outOfScope": true,
+              "reasonOutOfScope": "3rd Party SaaS",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isOutOfScope"
                 }
               }
             },
@@ -735,12 +767,14 @@
               ],
               "z": 13,
               "hasOpenThreats": false,
+              "outOfScope": true,
+              "reasonOutOfScope": "3rd party SaaS",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isOutOfScope"
                 }
               }
             },
@@ -755,12 +789,12 @@
               },
               "vertices": [
                 {
-                  "x": 463,
-                  "y": 89
+                  "x": 464,
+                  "y": 117
                 },
                 {
-                  "x": 421,
-                  "y": 80
+                  "x": 419,
+                  "y": 120
                 }
               ],
               "id": "e88112f9-d036-47b8-b37f-cdf005be9c48",
@@ -794,17 +828,17 @@
               "type": "tm.Boundary",
               "smooth": true,
               "source": {
-                "x": 237,
-                "y": 396
+                "x": 133,
+                "y": 481
               },
               "target": {
-                "x": 351,
-                "y": 381
+                "x": 342,
+                "y": 327
               },
               "vertices": [
                 {
-                  "x": 283,
-                  "y": 344
+                  "x": 224,
+                  "y": 373
                 }
               ],
               "id": "b73cc619-393b-468f-bdf0-2e643652d2c2",
@@ -825,6 +859,16 @@
               "id": "650734fc-cade-453b-8e27-208f7e8d4c92",
               "z": 16,
               "hasOpenThreats": false,
+              "threats": [
+                {
+                  "status": "Mitigated",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "title": "Compromised Credentials",
+                  "description": "Compromised credentials provide the threat actor with opportunity to spoof the user and assume their permission/access level.",
+                  "mitigation": "This attack is mitigated with the use of strongly enforced MFA."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -1146,8 +1190,8 @@
                 "height": 80
               },
               "position": {
-                "x": 633,
-                "y": 386
+                "x": 646,
+                "y": 393
               },
               "angle": 0,
               "id": "c2536e5f-221e-4e1b-b66a-d22f7a8f54f8",
@@ -1250,8 +1294,8 @@
               "labels": [
                 {
                   "position": {
-                    "distance": 0.6481691284492505,
-                    "offset": -29.88322516679862
+                    "distance": 0.7031156155911837,
+                    "offset": -28.405154331757462
                   },
                   "attrs": {
                     "text": {
@@ -1264,6 +1308,8 @@
               ],
               "z": 28,
               "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
