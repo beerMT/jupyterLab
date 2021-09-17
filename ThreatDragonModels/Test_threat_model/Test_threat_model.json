@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "title": "Test_threat_model"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "title": "User MFA M365",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      },
+      {
+        "title": "Abuse Case SQL DB",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 1
+      },
+      {
+        "title": "Power User Oracle Business Apps",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 2
+      }
+    ]
+  }
+}
