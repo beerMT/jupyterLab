@@ -56,7 +56,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "M365"
+                  "text": "M365 MFA\nLogin"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -147,7 +147,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "MFA"
+                  "text": "MFA\nAuthentication\nServer"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -198,7 +198,161 @@
       {
         "title": "Abuse Case SQL DB",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 1
+        "id": 1,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 153,
+                "y": 107
+              },
+              "angle": 0,
+              "id": "2d42ad10-098d-49f7-8ebc-507c3a7b5b16",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Any User"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 459,
+                "y": 105
+              },
+              "angle": 0,
+              "id": "786e5977-ecb2-4784-aa9e-b78287d40769",
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "SQL Databasee"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 424,
+                "y": 45
+              },
+              "target": {
+                "x": 396,
+                "y": 221
+              },
+              "vertices": [],
+              "id": "f411c256-e2e7-463d-af20-cb5abdb3b737",
+              "z": 5,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "2d42ad10-098d-49f7-8ebc-507c3a7b5b16"
+              },
+              "target": {
+                "id": "786e5977-ecb2-4784-aa9e-b78287d40769"
+              },
+              "vertices": [],
+              "id": "750d138c-089a-4882-bd5e-00c9dd2b76e2",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Database Request",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 6,
+              "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "786e5977-ecb2-4784-aa9e-b78287d40769"
+              },
+              "target": {
+                "id": "2d42ad10-098d-49f7-8ebc-507c3a7b5b16"
+              },
+              "vertices": [
+                {
+                  "x": 393,
+                  "y": 174
+                }
+              ],
+              "id": "8acac559-6d1a-475e-a5ae-92f151f356ca",
+              "labels": [
+                {
+                  "position": {
+                    "distance": 0.5137955395037906,
+                    "offset": 0
+                  },
+                  "attrs": {
+                    "text": {
+                      "text": "Database Response",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 7,
+              "hasOpenThreats": false,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 790
+        }
       },
       {
         "title": "Power User Oracle Business Apps",
