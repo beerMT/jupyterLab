@@ -30,7 +30,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "End User"
+                  "text": "End User / BYOD"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -175,7 +175,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "MFA Required Check",
+                      "text": "MFA Check",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -184,12 +184,14 @@
               ],
               "z": 7,
               "hasOpenThreats": false,
+              "outOfScope": true,
+              "reasonOutOfScope": "3rd party SaaS",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isOutOfScope"
                 }
               }
             },
@@ -227,12 +229,14 @@
               ],
               "z": 8,
               "hasOpenThreats": false,
+              "outOfScope": true,
+              "reasonOutOfScope": "3rd party SaaS",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isOutOfScope"
                 }
               }
             },
