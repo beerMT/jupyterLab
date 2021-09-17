@@ -700,31 +700,6 @@
               "attrs": {}
             },
             {
-              "type": "tm.Boundary",
-              "smooth": true,
-              "source": {
-                "x": 517,
-                "y": 31
-              },
-              "target": {
-                "x": 668,
-                "y": 57
-              },
-              "vertices": [
-                {
-                  "x": 399,
-                  "y": 64
-                },
-                {
-                  "x": 656,
-                  "y": 28
-                }
-              ],
-              "id": "ec45a87d-ff37-4b73-aa76-6a327f0a5cf8",
-              "z": 11,
-              "attrs": {}
-            },
-            {
               "type": "tm.Flow",
               "smooth": true,
               "source": {
